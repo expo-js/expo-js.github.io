@@ -26,6 +26,35 @@
       fetcher: islocal ? Flatdoc.file('../support/demo.md') : Flatdoc.github('rstacruz/expo', 'support/demo.md')
     });
   </script>
+  <style>
+    @media (min-width: 768px) {
+    #expo ~ ul:first-of-type {
+      display: block;
+      margin-left: 0;
+    }
+    #expo ~ ul:first-of-type:after {
+      content: '';
+      display: table;
+      clear: both;
+      *zoom: 1;
+    }
+    #expo ~ ul:first-of-type > li {
+      margin-left: 0;
+      float: left;
+      width: 45%;
+      box-sizing: border-box;
+      margin-top: 1em;
+    }
+    #expo ~ ul:first-of-type > li:before {
+      display: none;
+    }
+    #expo ~ ul:first-of-type > li strong {
+      font-size: 1.1em;
+      font-family: montserrat, sans-serif;
+      text-transform: uppercase;
+    }
+    }
+  </style>
 </head>
 <body class='no-literate large-brief' role='flatdoc'>
 
@@ -35,7 +64,7 @@
       <ul>
         <li><a href='https://github.com/rstacruz/expo'>View on GitHub</a></li>
         <li><a href='https://github.com/rstacruz/expo/issues'>Issues</a></li>
-        <li><a href='demo.html'>Demo</a></li>
+        <li><a href='guide.html'>guide</a></li>
       </ul>
     </div>
     <div class='right'>
